@@ -7,16 +7,81 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation-style.css">
 
-    <title>Hello, world!</title>
+    <!--========================================= GOOGLE-FONT =========================================-->
+      <link href="https://fonts.googleapis.com/css?family=Teko|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Orbitron:900" rel="stylesheet">
+    <!--===============================================================================================-->
+
+    <title>Exercise 1 - Martinus Richard Ticoalu</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    
+      <div class="photo-profile" style="text-align: center;">
+        <div class="typed">
+              <h1><span id="typed_bio"></span></h1>
+        </div>
+        <div class="foto">
+          <img src="./asset/image.jpg" width="300px" height="200px" alt="" style="border-radius: 20px;">
+        </div>
+      </div>
+      <!-- END OF PHOTO PROFILE -->
+
+    <div class="container personal-profile">
+      <center>
+        <div class="col-md-8">
+          <h2 class="h2-personal-profile">Personal Profile</h2>
+          <p>
+            Saya memahami dasar-dasar HTML, CSS, Javascript, Jquery, PHP, SQL, Bootstrap, Selain itu saya dapat mendesign website dengan photoshop dan silencing, saya juga memahami dasar-dasar teknik photo editing menggunakan photoshop.
+          </p>
+        </div>
+      </center>
+      <div class="row">
+        <div class="col-md-6" style="text-align: center;">
+          <h2>Name :</h2>
+          <p>Martinus Richard Ticoalu</p>
+          <h2>Birthday :</h2>
+          <p>21 September 1999</p>
+          <h2>Religion :</h2>
+          <p>Chatolic</p>
+        </div>
+        <div class="col-md-6" style="text-align: center;">
+          <h2>Number Phone :</h2>
+          <p>+62 895-3965-0260-5</p>
+          <h2>Email :</h2>
+          <p>martinus.richard09@gmail.com</p>
+          <h2>Website Portfolio :</h2>
+          <a href="https://martinus2199.github.io/landing-page/">Personal Portfolio</a>
+        </div>
+      </div>
+    </div>
+    <!-- END OF BIODATA -->
+
+    <footer>
+    <div class="container-footer">
+    <p>&copy; copyright 2019 | build with love by. <a href="http://instagram.com/mr_ticoalu">Martinus Richard Ticoalu</a></p>
+    </div>
+    </footer>
+    <!-- END OF FOOTER -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script src="./js/typed.js"></script>
+    <script>
+      var typed3 = new Typed('#typed_bio', {
+        strings: ['Biodata'],
+        typeSpeed: 20,
+        backSpeed: 30,
+        smartBackspace: true, // this is a default
+        loop: true
+      });
+    </script>
   </body>
 </html>
